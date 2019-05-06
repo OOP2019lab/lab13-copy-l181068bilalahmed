@@ -1,0 +1,42 @@
+
+template <typename t1, typename t2>
+t1 getMax(t1 i, t2 j){
+	if(i > j){
+		return i;
+	}
+	if(j > i){
+		return j;
+	}
+	if(i == j){
+		cout << "Same Values" << endl;
+	}
+}
+
+template <typename t3, typename t2>
+	t3 getMin(t3 i, t2 j){
+	if(i < j){
+		return i;
+	}
+	if(j < i){
+		return j;
+	}
+	if(i == j){
+		cout << "Same Values" << endl;
+	}
+}
+
+
+
+int main(){
+  char i='Z';
+  int  j=6, k;
+  long l=10, m=5, n;
+  k=getMax<int,long>(i,m);
+  n=getMin<int,char>(j,l);
+  cout << k << endl;
+  cout << n << endl;
+  system("pause");
+
+  // part (c): no problem
+  // part (e): no problem
+}
